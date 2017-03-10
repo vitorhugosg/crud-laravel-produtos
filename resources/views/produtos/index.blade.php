@@ -8,7 +8,7 @@
             <h1>Produtos</h1>
             <p>{{ Session::get('message') }}</p>
 
-            @foreach($todosprodutos as $produto)
+            
             
 
             <table class="table table-bordered table-hover table-condensed">
@@ -28,7 +28,7 @@
                         Editar
                         </th>
                         <th>
-                            Ver produto
+                            Ver
                         </th>
                         <th>
                         Deletar
@@ -36,6 +36,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                @foreach($todosprodutos as $produto)
                     <tr>
                         <td>
                             {{ $produto -> id }}
@@ -61,10 +62,10 @@
                             </form>
                         </td>
                     </tr>
-                    
+                    @endforeach
                 </tbody>
             </table>
-            @endforeach
+            
         </div>
     </div>
 </div>
