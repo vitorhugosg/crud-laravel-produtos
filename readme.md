@@ -1,30 +1,41 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
-<p align="center"><img src="http://vhcode.com.br/assets/img/logo.png"></p>
+<div align="center">
+  <h1>🛍️ CRUD Laravel de Produtos</h1>
+  <p><strong>Projeto de estudo com autenticação e cadastro de produtos.</strong></p>
+  <p>Uma base para explorar operações de criação, leitura, edição e remoção em Laravel.</p>
+</div>
 
+---
 
+## ✨ Funcionalidades
 
-## Projeto simples
+- Autenticação de usuários fornecida pela estrutura Laravel
+- CRUD de produtos como exemplo de recurso da aplicação
+- Migrations para criar as tabelas
+- Assets compilados com Laravel Elixir
 
-É um CRUD padrão para começar qualquer projeto em Laravel.
+## 🧰 Tecnologias
 
+`PHP 5.6.4+` · `Laravel 5.3` · `MySQL` · `Laravel Elixir`
 
-## O que vem nele?
+## 🚀 Como executar
 
-- Já vem com autenticação padrão de usuário já com algumas traduções.
+> Este projeto usa versões antigas do Laravel e do PHP. Prepare um ambiente compatível com essas dependências.
 
-- Um crud pronto de produtos para modelo.
+```bash
+composer install
+cp .env.example .env
+php artisan key:generate
+```
 
-## Contributing
+Configure o banco no `.env`, crie o banco vazio e execute:
 
-Se quiser contribuir entre em contato que vamos melhorar esse starter
+```bash
+php artisan migrate
+php artisan serve
+```
 
-## Get Starter / Começando
+Acesse o endereço local informado pelo servidor Artisan e crie/configure os dados da aplicação conforme necessário.
 
-Vá no arquivo .env configure seu banco de dados
+## 🔒 Configuração
 
-No terminal entre na pasta da sua aplicação execute o comando:
-
-"php artisan migrate"
-
-Pronto ele estára pronto para uso.
-
+Mantenha credenciais e chaves no `.env` local. Não envie esse arquivo para o repositório.
